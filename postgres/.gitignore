@@ -1,0 +1,8 @@
+./postgres/dist
+./postgres/node_modules
+./postgres/package-lock.json
+./postgres/yarn.lock
+./postgres/yarn-debug.log*
+./postgres/yarn-debug.log
+./postgres/yarn-debug.log
+./postgres/yarn-debug.log

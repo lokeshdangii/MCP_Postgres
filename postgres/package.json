@@ -1,0 +1,34 @@
+{
+  "name": "@modelcontextprotocol/server-postgres",
+  "version": "0.6.2",
+  "description": "MCP server for interacting with PostgreSQL databases",
+  "license": "MIT",
+  "author": "Anthropic, PBC (https://anthropic.com)",
+  "homepage": "https://modelcontextprotocol.io",
+  "bugs": "https://github.com/modelcontextprotocol/servers/issues",
+  "type": "module",
+  "bin": {
+    "mcp-server-postgres": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "bun": "bun --watch /index.ts",
+    "inspect":"npx @modelcontextprotocol/inspector bun index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "bun": "^1.2.8",
+    "pg": "^8.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@types/pg": "^8.11.11",
+    "shx": "^0.3.4",
+    "typescript": "^5.8.2"
+  }
+}
